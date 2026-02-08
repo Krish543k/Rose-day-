@@ -179,7 +179,7 @@ h2{color:#fff;margin:0;}
 <div id="lockScreen">
     <div class="lock-box">
         <h2>🔐 Enter Password</h2>
-        <input type="password" id="pwd" placeholder="only u ddmm">
+        <input type="password" id="pwd" placeholder="only ddmm">
         <button onclick="checkPassword()">OPEN</button>
         <div class="lock-error" id="err">❌ Galat password</div>
     </div>
@@ -190,7 +190,7 @@ h2{color:#fff;margin:0;}
 <script>
 function checkPassword(){
     let p=document.getElementById("pwd").value;
-    if(p==="1110"){
+    if(p==="2207"){
         document.getElementById("lockScreen").style.display="none";
         for(let i=0;i<25;i++){
             let r=document.createElement("div");
@@ -233,8 +233,8 @@ function flowerRain(){
     <div class="popup-box">
         <p>
         🌹 Rose Day aaya hai aaj,<br>
-        Aur tumhari yaad aur gehri ho gayi,<br>
-        Phool haath me hai mere,<br>
+        Aur tumlogo ki yaad aur gehri ho gayi,<br>
+        Phool hath me he mere,<br>
         Par khushboo tumhare bina adhoori ho gayi.
         </p>
         <button onclick="nextLine()">ok</button>
@@ -258,8 +258,8 @@ function nextLine(){
         <div class="girl-line">
             Mujhe pata hai tum pareshaan ho,<br>
             par pareshaan hone ki zarurat nahi hai 💖<br><br>
-            Phool to bahut hain par gulaab jaisa koi nahi,<br>
-            Ladkiyan to bahut hain… par tum jaisi koi nahi 😇 bigi hui ladki
+            Phool to bahut he par gulaab jaisa koi nahi,<br>
+            Ladkiyan to bahut he… par tumhare jesi koi nahi 😇 bigdi ladki
         </div>
     `;
 }
