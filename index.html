@@ -508,7 +508,7 @@ function checkPassword(){
 
 // Initialize Background
 function initBackground(){
-    for(let i=0;i<30;i++){
+    for(let i=0;i<15;i++){  // 30 se 15 kar diya
         let r=document.createElement("div");
         r.className="bg-rose";
         r.innerHTML="🌹";
@@ -530,7 +530,7 @@ function createHearts(){
         h.style.animationDelay=Math.random()*2+"s";
         document.body.appendChild(h);
         setTimeout(()=>h.remove(),8000);
-    },1500);
+    },3000);  // 1500 se 3000 kar diya (slow down)
 }
 
 // Rose Click
@@ -554,7 +554,7 @@ function roseClick(){
 
 // Create Sparkles
 function createSparkles(e){
-    for(let i=0;i<8;i++){
+    for(let i=0;i<4;i++){  // 8 se 4 kar diya
         let s=document.createElement("div");
         s.className="sparkle";
         s.style.left=e.clientX+"px";
@@ -567,7 +567,7 @@ function createSparkles(e){
 
 // Flower Rain
 function flowerRain(){
-    for(let i=0;i<60;i++){
+    for(let i=0;i<30;i++){  // 60 se 30 kar diya
         let f=document.createElement("div");
         f.className="rain-flower";
         f.innerHTML=["🌸","🌺","🌼","🌻","🌷"][Math.floor(Math.random()*5)];
